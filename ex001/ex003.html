@@ -16,10 +16,12 @@
     <h1>Olá, Mundo!</h1>
     <p>Meu primeiro código usando JavaScript</p>
     <script>
-        alert("Meu primeiro comando em JavaScript");
-        confirm("Deseja continuar?"); //Janela com botões "ok" e "cancel"
-        prompt("Qual o seu nome?"); //Campo de input para o usuário
-        scrollby(500, 500);
+        var n1 = prompt("Digite um número");
+        var n2 = prompt("Digite outro número");
+        n1 = Number.parseInt(n1); // Transforma de String para inteiro 
+        n2 = Number.parseInt(n2); // Transforma de String para inteiro 
+        var soma = n1 + n2;
+        alert(`A soma entre ${n1} e ${n2} é igual a: ${soma}`); //Usando o template string
     </script>
 </body>
 </html>
