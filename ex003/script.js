@@ -1,0 +1,1 @@
+alert("Criei um arquivo separado de JavaScript")

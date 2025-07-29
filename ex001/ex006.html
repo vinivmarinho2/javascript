@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: orange;
+            width: 400px;
+            height: 400px;
+            text-align: center;
+            font-size: 2em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"">
+        Clique aqui
+    </div>    
+    <script>
+        var container = document.getElementById("container") //container recebe o a div com id "container"
+        container.addEventListener('click', clicar) // Quando o container for clicado, chama a função "clicar"
+        container.addEventListener('mouseenter', entrar) // Quando o mouse entrar no container, chama a função "entrar"
+        container.addEventListener('mouseleave', sair) // Quando o mouse sair do container, chama a função "sair"
+        container.addEventListener('dblclick', double_click) // Quando o container receber um double click, chama a função "double_click"
+
+        function clicar() { // Clica uma vez
+            container.innerText = "Clicou no container!"
+            container.style.background = "pink"
+        }
+        function double_click() { // Clica 2 vezes
+            container.innerText = "Clicou duas vezes no container!"
+            container.style.background = "#fc1721"
+        }
+        function entrar() { // Entra no container
+            container.innerText = "Entrou no container"
+            container.style.background = "blue"
+        }
+        function sair() { // Sai do container
+            container.innerText = "Saiu do container"
+            container.style.background = "orange"
+        }
+    </script>
+</body>
+</html>

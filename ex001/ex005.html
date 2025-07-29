@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo sobre DOM</title>
+</head>
+<body>
+    <h1>Aprendendo sobre DOM</h1>
+    <p>Isto é o meu primeiro parágrado</p>
+    <div>Isso é uma div</div>
+    <p>Esse é o meu segundo parágrafo</p>
+
+    <script>
+        var p1 = document.getElementsByTagName('p')[1]
+        document.write(`Olha: ${p1.innerText}`)
+    </script>
+</body>
+
+</html>

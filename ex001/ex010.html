@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+        }
+        input{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Insira seu País</h1>
+    <label for="id_nacionalidade">País de Origem:</label>
+    <input type="text" name="nacionalidade" id="id_nacionalidade">
+    <input type="button" value="Enviar" onclick="nacionalidade()">
+    <div id="resultado"></div>
+
+    <script>
+        function nacionalidade(){
+            var input = document.querySelector("input#id_nacionalidade") // Recebe o input
+            var pais = input.value.toLowerCase() // Recebe o valor de input e deixa tudo em minúsculo 
+            var resultado = document.querySelector("div#resultado") // Recebe a "div#resultado"
+            if (pais == "brasil"){
+                resultado.innerHTML = "Você é <strong>brasileiro</strong>"
+            } else{
+                resultado.innerHTML = "Você é <strong>estrangeiro</strong>"
+            }
+        }
+    </script>
+</body>
+</html>

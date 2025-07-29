@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando JS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <label for="id_numero">Velocidade:</label> <!--"Label" do campo que recebe a velocidade-->
+    <input type="number" name="numero" id="id_numero"> <!--Campo que recebe a velocidade-->
+    <input type="button" value="Verificar" onclick="calcular()"> <!--Botão que verifica a velocidade. "onclick" chama a função "calcular()"-->
+    <div id="resultado">
+
+    </div> <!--Recebe o "resultado" calculado no JavaScript-->
+    <script>
+        function calcular(){
+            var velocidade_string = document.querySelector("input#id_numero") // Recebe o valor(string) inserido no campo
+            var velocidade = Number(velocidade_string.value) // Recebe o valor de "velocidade_string" e converte para "Number"
+            var resultado = document.querySelector("div#resultado") // Recebe a div#resultado (depois vou escrever através dessa variável)
+            resultado.innerHTML = `<p>Sua velocidade é: <strong>${velocidade}</strong>km/h</p>` // Escrevendo na div
+            if (velocidade > 60) { // Se a variável "velocidade" for maior que 60
+                resultado.innerHTML +=`<p>Você foi multado por excesso de velocidade</p>` // A variável resultado concatena essa mensagem à sua mensagem anterior
+            } else{ // Se a variável não for maior que 60
+                resultado.innerHTML += `<p>Você estava dentro do limite de velocidade</p>` // A variável resultado concatena essa mensagem à sua mensagem anterior
+            }
+        }
+    </script>
+</body>
+</html>

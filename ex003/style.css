@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* Globais */
+body{
+    background-color: rgb(70, 142, 236);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header{
+    color: white;
+    text-align: center;
+}
+
+/* MAIN */
+main{
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.391);
+}
+
+/* FOOTER */
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
