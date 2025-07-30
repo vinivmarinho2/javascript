@@ -14,23 +14,29 @@ header{
 
 /* MAIN */
 main{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.534);
     width: 500px;
     margin: auto;
     padding: 15px;
     border-radius: 15px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.391);
 }
-main div{
+main #botao{
+    padding: 5px;
+    width: 100px;
+}
+main div#resultado{
     text-align: center;
-    padding: 7px;
+    margin-top: 15px;
+    font-size: 1.1em;
 }
 main img{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
+    text-align: center;
+    margin-top: 15px;
 }
-
 /* FOOTER */
 footer{
     color: white;
