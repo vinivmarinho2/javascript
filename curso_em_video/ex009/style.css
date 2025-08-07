@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* Globais */
+body{
+    background-color: rgb(70, 142, 236);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header{
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* MAIN */
+main{
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.391);
+}
+main input[type="button"] {
+    padding: 10px;
+}
+input#adicionar{
+    margin-left: 20px;
+}
+select#id_lista{
+    width: 190px;
+    margin-top: 20px;
+}
+input#finalizar{
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
