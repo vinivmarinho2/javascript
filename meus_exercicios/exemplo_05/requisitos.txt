@@ -1,0 +1,4 @@
+O que eu preciso:
+- Saber a escolha do usuário de acordo com o botão clicado
+- Adicionar um "addEventListener" para os botões
+- Sempre que eles forem clicados, a função rodada será chamada

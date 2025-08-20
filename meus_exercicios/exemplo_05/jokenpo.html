@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        div#botoes{
+            display: flex;
+            justify-content: center;
+        }
+        button{
+            padding: 20px;
+            margin: 10px;
+            width: 150px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <div id="botoes">
+        <button id="pedra">Pedra</button>
+        <button id="papel">Papel</button>
+        <button id="tesoura">Tesoura</button><br>
+        <div id="resultado"></div>
+    </div>
+    
     <script src="jokenpo.js"></script>
 </body>
 </html>
